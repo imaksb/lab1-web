@@ -1,4 +1,6 @@
 let isVisible = false;
+const defaultClass = "badge rounded-pill";
+const operation = [2, 3, 5, 9, 10]
 
 function calculate() {
     if(!isVisible) {
@@ -7,23 +9,19 @@ function calculate() {
             "visibility": "visible"
         });
         isVisible = true;
-        console.log("haha");
     }
  
     let value = $("#number").val();
-    const defaultClass = "badge rounded-pill";
-    const operation = [2, 3, 5, 9, 10]
-    i = 0 
-    $(".rounded-pill").each(function() {
-        $(this).removeClass().addClass(defaultClass);
+ 
+    $(".rounded-pill").each(function(i) {
+        let $this = $(this)
+        $this.removeClass().addClass(defaultClass);
+
         if(value % operation[i] == 0) {
-            $(this).html("ділиться");
-            $(this).addClass("bg-success");
+            $this.html("ділиться").addClass("bg-success");
         } else {
-            $(this).html("не ділиться");
-            $(this).addClass("bg-danger");
-        }
-        i++;
+            $this.html("не ділиться").addClass("bg-danger");
+        } 
     });
 
     // let mainDiv = document.getElementById("results");
