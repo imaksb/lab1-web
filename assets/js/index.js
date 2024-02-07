@@ -2,7 +2,7 @@ let isVisible = false;
 const defaultClass = "badge rounded-pill";
 const operation = [2, 3, 5, 9, 10]
 
-function calculate() {
+function showResults() {
     if(!isVisible) {
         results = $(".results").css({
             "display": "block",
@@ -10,7 +10,12 @@ function calculate() {
         });
         isVisible = true;
     }
- 
+
+}
+
+function calculate() {
+    showResults();
+    
     let value = $("#number").val();
  
     $(".rounded-pill").each(function(i) {
