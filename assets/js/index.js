@@ -14,8 +14,6 @@ function showResults() {
 }
 
 function calculate() {
-    showResults();
-    
     let value = $("#number").val();
  
     $(".rounded-pill").each(function(i) {
@@ -29,6 +27,7 @@ function calculate() {
         } 
     });
 
+    showResults();
     // let mainDiv = document.getElementById("results");
     // mainDiv.style.display = "block";
     // mainDiv.style.visibility = "visible";

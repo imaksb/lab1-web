@@ -14,13 +14,18 @@
         <label for="check" class="checkbtn">
             <i class="bi bi-list"></i>
         </label>
-        <img src="assets/img/dinosaur.png" class="header-logo" alt=""> 
-        <ul>
-            <li><a href="#" class="active">Дільники числа</a></li>
-        <li><a href="#">STH</a></li>
-        <li><a href="№">STH</a></li>
-        <li><a href="#">STH</a></li>
-        <li><a href="№">STH</a></li>
+        <div class="logo-bar" onmouseenter="showModal()" onmouseleave="hideModal()">          
+            <img src="assets/img/dinosaur.png" class="header-logo" alt=""> 
+            <div class="some-modals">
+                <h1>Maksym Bychyniuk</h1>
+                <p>About me text...</p>
+            </div>
+        </div>
+         <ul class="nav-links">
+            <li><a href="index.html" class="active">Дільники числа</a></li>
+            <li><a href="longest.html">Найбільше слово</a></li>
+            <li><a href="words.html">Кількість слів</a></li>
+            <li><a href="password.html">Згенерувати пароль</a></li>
         </ul>
     </nav>
     <div class="testimonial-box-container">
@@ -69,6 +74,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/modals.js"></script>
 
 </body>
 </html>
