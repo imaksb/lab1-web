@@ -1,1 +1,1 @@
-https://imaksb.github.io/simpleJS/
+https://imaksb.github.io/lab1-web/
