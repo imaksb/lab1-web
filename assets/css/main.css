@@ -246,5 +246,11 @@ a {
   border: #007aff 10px solid;
   background-color: #007aff;
   color: #fff;
-  border-radius: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.logo-bar a:hover {
+  background: none !important;
+  text-decoration: none;
 }
