@@ -15,5 +15,5 @@ function showModal() {
 
 function hideModal() {
   results = $(".some-modals").css(hideSth);
-  $(".nav-links li").css(showSth).css({ display: "inline" });
+  $(".nav-links li").css(showSth).css({ display: "inline-block" });
 }
